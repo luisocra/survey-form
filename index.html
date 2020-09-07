@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Cancellation Survey</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img id="logo" src="logo3.png">
+            <h1 id="title">XYZ ISP Company</h1>
+        </header>
+        <div style="padding: 10px;">
+            <p id="description" style="text-align:center">We're sorry to see you go...</p>
+        </div>
+        <form id="survey-form" action="#">
+            <div class="forms"> <label id="name-label" for="name">Name</label>
+                <input class="boxes" type="text" id="name" required placeholder="Enter your name"></div>
+            <div class="forms"> <label id="email-label" for="email">Email</label>
+                <input class="boxes" type="email" id="email" required placeholder="Enter your email"></div>
+            <div class="forms"> <label id="number-label" for="number">Age</label><input class="boxes" type="number" id="number"
+                    min="18" max="99" required placeholder="Enter your age"></div>
+            <div class="forms"> <label for="dropdown">Please select the primary reason for the cancellation of your
+                    services</label> <select class="boxes" name="reason" id="dropdown" required>
+                    <option value="" selected disabled>Please select an option</option>
+                    <option value="tempo">This is temporary, I'll resuscribe</option>
+                    <option value="need">I don't need it anymore</option>
+                    <option value="alternative">I found a better alternative</option>
+                    <option value="quality">Quality wasn't what I expected</option>
+                </select> </div>
+            <div class="forms">
+                <p style="padding-bottom: 10px;">Please rate your experience using our services</p>
+                <label for="satisfied"><input id="satisfied" value="satisfied" type="radio"
+                        name="satisfaction">Satisfied</label>
+                <label for="neutral"><input id="neutral" value="neutral" type="radio"
+                        name="satisfaction">Neutral</label>
+                <label for="unsatisfied"><input id="unsatisfied" value="unsatisfied" type="radio"
+                        name="satisfaction">Unsatisfied</label>
+            </div>
+            <div class="forms">
+                <p style="padding-bottom: 10px;">Select the options that you would like to see improved</p>
+                <label for="speed"><input type="checkbox" id="speed" value="speed" name="score">Speed</label>
+                <label for="stability"><input type="checkbox" id="stability" value="stability"
+                        name="score">Stability</label>
+                <label for="connection"><input type="checkbox" id="connection" value="connection"
+                        name="score">Connection</label>
+                <label for="customer service"><input type="checkbox" id="customer service" value="customer service"
+                        name="score">Customer service</label>
+                <label for="none"><input type="checkbox" id="none" value="none" name="score">None</label>
+            </div>
+            <div class="forms">
+                <label for="comments">Tell us any comments or suggestions you may have (optional)</label>
+                <textarea id="comments" name="comments" rows="5" cols="50"
+                    placeholder="Enter your suggestions"></textarea>
+            </div>
+            <div>
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
